@@ -353,10 +353,10 @@ img {
 }
 
 .footer-social-link:hover {
-  background-color: var(--pressed-state-color);
+  background-color: var(--success-color);
 }
 .footer-social-link:focus {
-  background-color: var(--pressed-state-color);
+  background-color: var(--success-color);
 }
 
 .portfolio-section {

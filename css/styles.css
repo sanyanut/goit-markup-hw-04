@@ -72,8 +72,8 @@ img {
 
 .header {
   border-bottom: 1px solid var(--accent-color);
-  box-shadow: 0px 2px 1px var(--card-shadow-2), 0px 1px 1px var(--card-shadow-2),
-    0px 1px 6px var(--card-shadow-2);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -168,6 +168,7 @@ img {
 .address-link {
   color: var(--text-color);
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -177,10 +178,14 @@ img {
 
 .hero-section {
   background-color: var(--dark-color);
-  background-image: linear-gradient(var(--hero-bg-color), var(--hero-bg-color)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url('../images/hero-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   max-width: 1440px;
   padding: 188px 0;
   margin: 0 auto;
@@ -326,7 +331,7 @@ img {
 .footer-social {
   width: 40px;
   height: 40px;
-  fill: var(--accent-color);
+  fill: var(--light-color);
 }
 
 .team-item-link,
@@ -341,17 +346,17 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-item-link:hover {
-  background-color: var(--success-color);
+  background-color: var(--pressed-state-color);
 }
 .team-item-link:focus {
-  background-color: var(--success-color);
+  background-color: var(--pressed-state-color);
 }
 
 .footer-social-link:hover {
-  background-color: var(--success-color);
+  background-color: var(--pressed-state-color);
 }
 .footer-social-link:focus {
-  background-color: var(--success-color);
+  background-color: var(--pressed-state-color);
 }
 
 .portfolio-section {
